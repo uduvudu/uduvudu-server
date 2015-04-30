@@ -17,7 +17,7 @@ require('rdf-ext')(config.rdf);
 config.static = [
   {
     route: '/',
-    path: 'public/'
+    path: 'node_modules/uduvudu/'
   }
 ];
 
@@ -46,7 +46,7 @@ config.webid = {
 
 // UAC
 config.uac = {
-  'disable': false,
+  'disable': true,
   'graph': 'https://localhost:8443/.access'
 };
 
@@ -57,7 +57,7 @@ config.ldp = {
 
 // tls
 config.tls = {
-  'disable': false,
+  'disable': true,
   'keyFile': './data/localhost.key',
   'certFile': './data/localhost.crt'
 };
@@ -74,7 +74,7 @@ config.session = {
 // core
 config.core = {
   'host': 'localhost',
-  'port': '8443',
+  'port': '8080',
   'basePath': '',
   'proxy': false
 };
